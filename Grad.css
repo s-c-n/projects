@@ -1,0 +1,16 @@
+body{
+  overflow-x: hidden;
+  overflow-y: inherit; 
+}
+.scs{
+    position: relative;
+    top: 15px;
+    left: 540px;
+    font-size: 25px;
+}
+.col{
+    position: relative;
+    left: 20px;
+  flex-direction: column;
+  gap: 20px;
+}

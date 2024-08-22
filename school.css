@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: inherit; 
+  }
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #242424;
+}
+.container{
+    width: 1300px;
+    margin: 0px auto;
+}
+.header{
+    background: #0055a4;
+    padding: 6px;
+}
+.header b{
+    background: #fff;
+    color: gold;
+    padding: 15px;
+    font-size: 25px;
+}
+.header marquee{
+    font-size: 25px;
+    color: yellow;
+    width: 80%;
+}
+nav{
+    float: right;
+    padding: 25px 0px;
+}
+nav a{
+    position: relative;
+    right: 150px;
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px 12px;
+    font-weight: 500;
+}
+.dropdown ol{
+    position: relative;
+    left: 1120px;
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px 12px;
+    font-weight: 500;
+}
+.dropdown-menu li a{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px 12px;
+    font-weight: 500;
+}
+.poo{
+    position: relative;
+    top: 190px;
+    left: 600px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.oop{
+    position: relative;
+    top: 60px;
+    left: 400px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.rop{
+    position: relative;
+    top: 170px;
+    left: 620px;
+    margin: 0px;
+    padding: 2px;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 2px;
+}
+.por{
+    position: relative;
+    top: 40px;
+    left: -6px;
+    margin: 0px;
+    padding: 2px;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 2px;
+}
+.orp{
+    position: relative;
+    top: 70px;
+    left: -6px;
+    margin: 0px;
+    padding: 2px;
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 2px;
+}
+.container4{
+    position: relative;
+    top: -132px;
+    left: 100px;
+}
+.ssc{
+    position: relative;
+    top: -20px;
+    left: 500px;
+    font-size: 25px;
+}
+.col{
+    position: relative;
+    left: 20px;
+  flex-direction: column;
+}
+#llk{
+    position: absolute;
+    bottom: -910px;
+    left: 100px;
+    font-size: 20px;
+}
+#kkl{
+    position: absolute;
+    bottom: -910px;
+    left: 530px;
+    font-size: 20px;
+}
+#lkj{
+    position: absolute;
+    bottom: -910px;
+    left: 900px;
+    font-size: 20px;
+}
+.vvk{
+    position: relative;
+    bottom: -100px;
+    left: 450px;
+    font-size: 35px;
+}
+.cols{
+    position: relative;
+    top: 120px;
+    left: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+#data{
+    position: relative;
+    bottom: -100px;
+    left: 80px;
+    font-size: 20px;
+}
+#lldf{
+    position: absolute;
+    left: 30px;
+    font-size: 15px;
+}
+
+#dat{
+    position: relative;
+    bottom: -55px;
+    left: 500px;
+    font-size: 20px;
+}
+#ddss{
+    position: absolute;
+    left: 40px;
+    font-size: 15px;
+}
+
+#da{
+    position: relative;
+    bottom: -10px;
+    left: 900px;
+    font-size: 20px;
+}
+#lldl{
+    position: absolute;
+    left: 60px;
+    font-size: 15px;
+}
+.colss{
+    position: relative;
+    top: 50px;
+    left: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+#dtaa{
+    position: relative;
+    bottom: -35px;
+    left: 80px;
+    font-size: 20px;
+}
+#llde{
+    position: absolute;
+    left: 30px;
+    font-size: 15px;
+}
+#dta{
+    position: relative;
+    bottom: 10px;
+    left: 550px;
+    font-size: 20px;
+}
+#dds{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+}
+
+#das{
+    position: relative;
+    bottom: 60px;
+    left: 940px;
+    font-size: 20px;
+}
+#lld{
+    position: absolute;
+    left: 40px;
+    font-size: 15px;
+}
+.colsss{
+    position: relative;
+    top: 5px;
+    left: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+#dtal{
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+    font-size: 20px;
+}
+#lldx{
+    position: absolute;
+    left: -10px;
+    font-size: 15px;
+}
+#dt{
+    position: relative;
+    bottom: 60px;
+    left: 500px;
+    font-size: 20px;
+}
+#ddv{
+    position: absolute;
+    left: 80px;
+    font-size: 15px;
+}
+
+#ds{
+    position: relative;
+    bottom: 105px;
+    left: 940px;
+    font-size: 20px;
+}
+#lldi{
+    position: absolute;
+    left: -20px;
+    font-size: 15px;
+}
+.sst{
+    position: relative;
+    bottom: -70px;
+    left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.hhr{
+    position: relative;
+    bottom: 28px;
+    left: 900px;
+    font-size: 20px;
+    color: #fff;
+}
+.rrh{
+    position: relative;
+    bottom: 60px;
+    left: 830px;
+    font-size: 15px;
+    color: #fff;
+}
+.wwe{
+    position: relative;
+    bottom: 127px;
+    left: 800px;
+    font-size: 20px;
+    color: #fff;
+}
+.eww{
+    position: relative;
+    bottom: 110px;
+    left: 830px;
+    font-size: 15px;
+    color: #fff;
+}
+.qqw{
+    position: relative;
+    bottom: 172px;
+    left: 800px;
+    font-size: 15px;
+    color: #fff;
+}
+.ssf{
+    position: relative;
+    bottom: 150px;
+    left: 830px;
+    font-size: 15px;
+    color: #fff;
+}
+.ddm{
+    position: relative;
+    bottom: 236px;
+    left: 800px;
+    font-size: 15px;
+    color: #fff;
+}
+.ddk{
+    position: relative;
+    bottom: 150px;
+    left: 400px;
+    font-size: 15px;
+    color: #fff;
+}
+.kkm{
+    color: red;
+}
+
