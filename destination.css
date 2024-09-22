@@ -1,0 +1,78 @@
+/* Basic Reset */
+body{
+    background-image: url('pic/istockphoto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Styling the container */
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: green;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+/* Content Area Styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.region {
+    display: none;
+}
+
+.region h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.countries p {
+  font-size: 18px;
+  color:white;
+  margin: 5px 0;
+  text-align: center;
+}
+.countries p:hover {
+    color: #000;
+    font-weight: 500;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Tour Review</title>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-image: url(pics/ryan-spencer-XGKaRnWjv1c-unsplash.jpg);
+            background-size: cover;
+        }
+        h2 {
+            color: #333;
+        }
+        .review-section {
+            /* background-image: linear-gradient(to top, rgba(255, 0, 0, 0.626), white); */
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: none; /* Initially hidden */
+        }
+        
+        .feedback-form {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+            height: 200px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        /* button:hover {
+            background-color: #0056b3;
+        } */
+        .navlink {
+            margin-right: 20px;
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        
+        .imgcont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Space between images */
+        }
+
+        .imgcont img{
+        width: calc(33% - 10px); /* Adjust for 3 images in a row */
+        max-width: 100%; /* Responsive */
+        border-radius: 5px; /* Optional: rounded corners */
+        height: 350px;
+        }
+    </style>
+
+</head>
+<body>  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a><span style="font-size: 40px; color: blue;">TOUR </span> <span style="font-family: 'Courier New', Courier, monospace; font-size: 40px; color: blue;"> REVIEW</span></a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav ms-auto">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tour Review Sections
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="showSection('packageReview')"><i class="bi bi-pencil"></i>Package Review</a>
+                        <a class="dropdown-item" href="#" onclick="showSection('rateTrip')"><i class="bi bi-star"></i>Rate Trip</a>
+                        <a class="dropdown-item" href="#" onclick="showSection('feedback')"><i class="bi bi-hand-thumbs-up"></i>Leave Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="packageReview" class="review-section">
+        <h2 style="font-size: 50px; color: blue;">Package <span style="font-family: 'Courier New', Courier, monospace;">Overview</span></h2><hr>
+        <p style="font-size: 40px; text-align: center;"><strong>Description</strong></p>
+        <p style="font-size: 18px; text-align: center;"><span>Enjoy a 5-day guided tour that showcases stunning landscapes and rich culture. <br> "Embark on a transformative 5-day guided tour that showcases breathtaking <br> landscapes and rich cultural experiences. Led by expert local guides, <br> you will explore iconic landmarks, participate in traditional workshops, <br> and enjoy a variety of activities designed for all interests.</span></p><br><br>
+        <p style="font-size: 40px; text-align: center;"><strong>Highlights</strong></p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="pics/national-park-accessible-go-list_s.webp" style="width: 300px; height: 300px; border-radius: 5px;" alt="">
+                    <p style="font-size: 22px;">Explore national parks</p>
+                </div>
+                <div class="col">
+                    <img src="pics/istockphoto-665393236-612x612.jpg" style="width: 300px; height: 300px; border-radius: 5px;" alt="">
+                    <p style="font-size: 22px;">Experience local cuisine</p>
+                </div>
+                <div class="col">
+                    <img src="pics/CNNPWALKING-2.jpg" style="width: 300px; height: 300px; border-radius: 5px;" alt="">
+                    <p style="font-size: 22px;">Join guided tours of historic sites</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <p style="font-size: 40px; text-align: center;"><strong>Itinerary Highlights</strong></p>
+        <ul style="font-size: 18px; text-align: center;">
+            <span style="font-size: 25px;"><b>Day 1.</b></span> Arrive and enjoy a welcoming dinner featuring authentic <br> local cuisine. <br>
+            <span style="font-size: 25px;"><b>Day 2.</b></span> Visit stunning national parks, with opportunities for <br> hiking and wildlife spotting. <br>
+            <span style="font-size: 25px;"><b>Day 3.</b></span> Immerse yourself in the local culture through <br> hands-on cooking classes and market tours. <br>
+            <span style="font-size: 25px;"><b>Day 4.</b></span> Discover historical sites and participate <br> in a cultural performance. <br>
+            <span style="font-size: 25px;"><b>Day5.</b></span> Share your experiences and feedback <br> before departing. <br>
+        </ul>
+
+        <br><br>
+        <p style="font-size: 18px; text-align: center;">
+            Our carefully selected accommodations offer a blend of comfort <br> and local charm, ensuring a restful stay. We prioritize your <br> safety with 24/7 support throughout the journey and <br> adhere to sustainable tourism practices.
+            <br><br>
+            Don't just take our word for it—past travelers rave, 'This tour <br> was the highlight of my year!' Perfect for adventure <br> enthusiasts and culture lovers alike, this package <br> promises unforgettable memories."
+        </p>
+
+        <br><br>
+        <p style="text-align: center;"><span style="font-size: 40px;"><strong>Recommendation</strong></span> <span style="font-size: 18px;"> <br><i>Perfect for adventure and culture lovers!</i></span></p>
+        <div class="container" style="width: 800px;">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="pics/florian-delee-YWdMROp8-JE-unsplash.jpg" class="img-fluid" style="width: 100%; height: 550px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p style="font-size: 20px;">Perfect for adventure lovers</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="pics/istockphoto-904172104-612x612.jpg" class="img-fluid" style="width: 100%; height: 550px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p style="font-size: 20px;">Perfect for adventure lovers!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="pics/foreign-vloggers-in-China.jpg" class="img-fluid" style="width: 100%; height: 550px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p style="font-size: 20px;">Perfect for cultural lovers!</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    
+        </div>
+        <br><br><br>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img style="margin-right: 10px; width: 450px; height: 370px; border-radius: 5px;" src="pics/Satisfied-Customers.png" alt="">
+            <h2><span style="font-size: 50px; color: blue;">Overall <span style="font-family: 'Courier New', Courier, monospace;">Rating</span></span><br>
+            <span style="color: blue; font-size: 30px;">★★★★★ (5/5)</span> <br>
+            <strong><span style="font-size: 20px;">OUR SERVICES HERE ARE TOP NOTCH!</span> <i class="bi bi-heart-fill" style="color: blue; font-size: 23px;"></i></strong>
+            </h2>
+        </div>
+
+    </div>
+
+    <div id="rateTrip" class="review-section">
+        <h3 style="font-size: 50px; color: yellowgreen;">Rate Your Experience</h3>
+        <form>
+            <label for="accommodation" style="font-size: 25px;">Accommodation:</label>
+            <select id="accommodation">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="activities" style="font-size: 25px;">Activities:</label>
+            <select id="activities">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="overall" style="font-size: 25px;">Overall Experience:</label>
+            <select id="overall">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <button type="submit">Submit Rating</button>
+        </form>
+    </div>
+
+    <div id="feedback" class="review-section feedback-form">
+        <h3 style="font-size: 50px; color: yellowgreen;">Leave Your Feedback</h3>
+        <form>
+            <label for="feedback"><span style="font-size: 20px;">Your Thoughts, Let us know how much you enjoyed your trip and what you think of our services.</span></label>
+            <textarea id="feedback" rows="4" placeholder="Share your experience..."></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.review-section');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the package review section by default
+        showSection('packageReview');
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
